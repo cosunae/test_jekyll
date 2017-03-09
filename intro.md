@@ -1,27 +1,14 @@
 ---
 layout: page
-title: About
-permalink: /about/
-order: 100
+title: Overview
+permalink: /overview/
+order: 1
 ---
-
-[comment]: # (![image-title-here](/path/to/image.jpg){:class="img-responsive"})
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
+{% include_relative about_subfile.md %}
 
-$$a^2+b^2=c^2$$
-
-{% highlight c++ %}
-int main()
-{
-    std::cout << "bla" << std::endl;
-}
-{% endhighlight %}
-
-{% highlight c++ %}
-{% include myfile.cpp %}
-{% endhighlight %}
 You can find the source code for the Jekyll new theme at:
 {% include icon-github.html username="jekyll" %} /
 [minima](https://github.com/jekyll/minima)
