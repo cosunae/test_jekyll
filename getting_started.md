@@ -57,7 +57,7 @@ $$
 ## Coordinate System ##
 For a finite difference discretization we restrict the field $$\phi \in \mathbb{R}^3$$ to a discrete grid.
 We use the notation $$i = x_i$$ and $$j = y_j$$ for the horizontal dimension and $$k = z_k$$ for the vertical dimension, 
-where $$x_i, y_j, z_k$$ are the $$x,y,z$$ coordinates restricted on the grid. The \emph{computation domain} is defined by 
+where $$x_i, y_j, z_k$$ are the $$x,y,z$$ coordinates restricted on the grid. The **computation domain** is defined by 
 all grid points in our domain of interest
 \begin{equation}
  \Lambda = (i,j,k) \quad \text{with}\quad i \in \{ 0\dots N_i-1\}, j \in \{0\dots N_j-1\}, k\in\{0 \dots N_k-1\}
@@ -70,8 +70,8 @@ must not be a
 dependency in $$ij$$ within a stencil while there can be a dependency in $$k$$. For now (this chapter) it is sufficient to 
 just remember that the $$ij$$-plane and the $$k$$ dimension are treated differently by GridTools.
 
-The calculation domain is surrounded by a \emph{boundary region}\footnote{Note that in later chapters we will also 
-deal with \emph{halos}, e.g.\ in the context of loop tiling or multi-node environments. For now the differences 
+The calculation domain is surrounded by a **boundary region**\footnote{Note that in later chapters we will also 
+deal with **halos**, e.g.\ in the context of loop tiling or multi-node environments. For now the differences 
 between the global boundary and the halo regions are not important.} as depicted in 
 \reffig{fig:getting_started:coordinates}. Computation happens only within the calculation domain but values might be 
 read from grid points in the boundary region.

@@ -22,7 +22,7 @@
           <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           <br/>
             {% for menu_item in my_page.menu %}
-                - <a class="page-link" href="#{{menu_item | slugify }}">{{ menu_item }}</a><br/>
+                - <a class="page-link" href="{{ my_page.url | relative_url }}#{{menu_item | slugify }}">{{ menu_item }}</a><br/>
             {% endfor %}
           {% endif %}
           {% endif %}
